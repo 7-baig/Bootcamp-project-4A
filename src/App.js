@@ -11,6 +11,8 @@ function App() {
 
   const ref = useRef()
 
+  // ANIMATIONS
+
   const { ref: birdRef, getAnimation: birdAnimation } = useWebAnimations({
     keyframes: [
       { transform: 'translateX(1000px)' },
@@ -84,9 +86,7 @@ function App() {
   });
 
 
-
   useEffect(() => {
-    alert('hello')
 //  It will slow down the speed of boy until he reaches the playback of 0.5
     let timer = setInterval(() => {
       if (boyAnimation().playbackRate >= 0.4 ) {
@@ -101,7 +101,6 @@ function App() {
         // clearInterval(timer)
       }
     }, 1000)
-
   }, [])
 
 
@@ -135,7 +134,7 @@ function App() {
         <img src={tree} alt="tree" />
       </div>
       <div className="tap">
-        <h5>Tap on boy</h5>
+        <h1>Tap on boy</h1>
       </div>
 
     </div>
