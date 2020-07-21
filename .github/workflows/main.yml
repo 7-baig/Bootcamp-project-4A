@@ -25,11 +25,11 @@ jobs:
       uses: actions/setup-node@v2-beta
       with: 
         node-version: 12  
+    - name: build
+      run: npm run build
 
     # Runs a set of commands using the runners shell
     - name: installing surge
       run: npm install --global surge
-    - name: build
-      run: npm run build
     - name: deploying to surge
       run: surge ./build bootcamp-project-4a-saad.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
