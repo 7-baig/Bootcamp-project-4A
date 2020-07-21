@@ -134,6 +134,9 @@ function App() {
       <div className="tree2" ref={tree2Ref}>
         <img src={tree} alt="tree" />
       </div>
+      <div className="tap">
+        <h5>Tap on boy</h5>
+      </div>
 
     </div>
   )
