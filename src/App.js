@@ -86,7 +86,7 @@ function App() {
 
 
   useEffect(() => {
-
+    alert('hello')
 //  It will slow down the speed of boy until he reaches the playback of 0.5
     let timer = setInterval(() => {
       if (boyAnimation().playbackRate >= 0.4 ) {
